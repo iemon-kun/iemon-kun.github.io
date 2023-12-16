@@ -277,8 +277,12 @@ section{
         font-size: 55%;
     }
 
-    body{
+    .body-left{
         padding-left: 0;
+    }
+    
+    .body-right{
+        padding-right: 0;
     }
 
     .header-left{
