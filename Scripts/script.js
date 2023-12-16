@@ -33,17 +33,35 @@ themeToggler.onclick = () => {
     }
 }
 
-// 右手モードボタン
-const handToggler = document.querySelector('#hand-toggler');
+// 左右モードボタン
+const handToggler = document.querySelector('#lr-toggler');
 handToggler.onclick = () => {
     handToggler.classList.toggle('right');
     header.classList.toggle('header-right'); // この行を追加
     header.classList.toggle('header-left');
+    menu.classList.toggle('menu-left');
+    menu.classList.toggle('menu-right');
+    document.body.classList.toggle('body-left');
+    document.body.classList.toggle('body-right');
 
     if(handToggler.classList.contains('right')){
         handToggler.textContent = "右";
     }else{
         handToggler.textContent = "左";
+    }
+}
+
+// 上下モードボタン
+const topBottomToggler = document.querySelector('#tb-toggler');
+topBottomToggler.onclick = () => {
+    topBottomToggler.classList.toggle('top');
+    menu.classList.toggle('menu-top');
+    menu.classList.toggle('menu-bottom');
+
+    if(topBottomToggler.classList.contains('top')){
+        topBottomToggler.textContent = "上";
+    }else{
+        topBottomToggler.textContent = "下";
     }
 }
 
