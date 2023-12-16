@@ -30,7 +30,14 @@ html{
 
 body{
     background: var(--bg-color);
+}
+
+.body-left{
     padding-left: 30rem;
+}
+
+.body-right{
+    padding-right: 30rem;
 }
 
 body.dark{
@@ -151,7 +158,7 @@ section{
     box-shadow: var(--box-shadow-inset);
 }
 
-#hand-toggler{
+#lr-toggler{
     margin-left: 1rem;
     height: 5rem;
     width: 5rem;
@@ -162,14 +169,30 @@ section{
     text-align: center;
     color:var(--black);  
 }
-#hand-toggler:hover{
+#lr-toggler:hover{
+    color: var(--green);
+    box-shadow: var(--box-shadow-inset);
+}
+
+#tb-toggler{
+    margin-left: 1rem;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    color:var(--black);
+    display: none;
+}
+#tb-toggler:hover{
     color: var(--green);
     box-shadow: var(--box-shadow-inset);
 }
 
 #menu-btn{
     position: fixed;
-    top: 1.5rem; left: 2rem;
     z-index: 1000;
     height: 5rem;
     width: 5rem;
@@ -186,6 +209,64 @@ section{
 #menu-btn :hover{
     color: var(--green);
     box-shadow: var(--box-shadow-inset);
+}
+.menu-left{
+    left: 2rem;
+}
+.menu-right{
+    right: 2rem;
+}
+.menu-top{
+    top: 1.5rem;
+}
+.menu-bottom{
+    bottom: 1.5rem;
+}
+
+
+
+.home{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.home .content h3{
+    font-size: 7rem;
+    color: var(--black);
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.home .content p{
+    font-size: 2rem;
+    color: var(--green);
+    padding-bottom: .5rem;
+}
+
+.home .share{
+    position: relative;
+    top: 10rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    padding: 1rem;
+}
+
+.home .share a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    box-shadow: var(--box-shadow);
+    margin: .5rem;
+    font-size: 2rem;
+    color: var(--black);
+    border-radius: .5rem;
+}
+.home .share a:hover{
+    box-shadow: var(--box-shadow-inset);
+    color: var(--green);
 }
 
 
@@ -217,6 +298,10 @@ section{
     }
 
     #menu-btn{
+        display: initial;
+    }
+
+    #tb-toggler{
         display: initial;
     }
 
