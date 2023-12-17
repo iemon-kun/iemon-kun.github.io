@@ -436,6 +436,45 @@ section{
 }
 
 
+
+.links{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.links h3{
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    color: var(--black);
+    line-height: 1.1;
+}
+
+.links .link-contents{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 2rem;
+}
+
+.links .link-contents a{
+    display: block;
+    margin: 1.5rem 0;
+    padding: .7rem;
+    border-radius: 5rem;
+    font-size: 2rem;
+    box-shadow: var(--box-shadow);
+    color:var(--black);
+}
+.links .link-contents a:hover{
+    box-shadow: var(--box-shadow-inset);
+    color: var(--green);
+}
+
+.links footer{
+    font-size: 1rem;
+    margin-top: 7rem;
+}
+
 /* media queries */
 @media (max-width:991px){
 
