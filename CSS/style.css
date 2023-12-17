@@ -330,6 +330,112 @@ section{
 
 
 
+.works .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 2rem;
+}
+
+.works .box-container .box{
+    height: 25rem;
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    position: relative;
+    border: 1rem solid transparent;
+}
+
+.works .box-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.works .box-container .box .content{
+    position: absolute;
+    top: 0; left: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--bg-color);
+    display: grid;
+    place-items: center;
+    transform: scale(0);
+}
+
+.works .box-container .box:hover .content{
+    transform: scale(1);   
+}
+
+.works .box-container .box .content h3{
+    font-size: 2.5rem;
+    color: var(--black);
+    text-transform: uppercase;
+    transform: translateY(-5rem);
+    opacity: 0;
+    transition-delay: .3s;
+}
+
+.works .box-container .box:hover .content h3{
+    transform: translateY(0rem);
+    opacity: 1;
+}
+
+
+
+.contact{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact h3{
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    color: var(--black);
+    line-height: 1.1;
+}
+
+.contact p{
+    margin-top: 3rem;
+    font-size: 1.6rem;
+    color: var(--black);
+}
+
+.contact span{
+    color: var(--green);
+}
+
+.contact .share{
+    position: relative;
+    top: 10rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    padding: 1rem;
+}
+
+.contact .icon use{
+    fill: var(--black);
+}
+
+.contact .share svg{
+    height: 5rem;
+    width: 5rem;
+    padding: 1rem;
+    line-height: 5rem;
+    box-shadow: var(--box-shadow);
+    margin: .5rem;
+    font-size: 2rem;
+    color: var(--black);
+    border-radius: .5rem;
+}
+.contact .share svg:hover{
+    box-shadow: var(--box-shadow-inset);
+    color: var(--green);
+}
+
+
 /* media queries */
 @media (max-width:991px){
 
