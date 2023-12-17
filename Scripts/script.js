@@ -116,7 +116,9 @@ document.querySelectorAll('nav ul li a').forEach(link => {
 function updateFooter() {
     // footer要素の内容を更新するコード
     // 例: コピーライト情報の更新、SNSリンクの追加など
-    const headerElement = document.querySelector('footer');
+    const footerElement = document.querySelector('footer');
+    let todaysYear = new Date().getFullYear();
+    footerElement.innerHTML = `&copy; ${todaysYear} いえもんくんの錬処 All Rights Reserved`;
 }
 
 document.addEventListener('DOMContentLoaded', updateFooter);
