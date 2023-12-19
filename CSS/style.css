@@ -473,6 +473,7 @@ section{
 .links footer{
     font-size: 1rem;
     margin-top: 7rem;
+    color: var(--black);
 }
 
 /* media queries */
