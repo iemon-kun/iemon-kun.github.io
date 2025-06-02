@@ -45,12 +45,28 @@
       sizes="16x16"
       href="icons/favicon-16x16.png"
     />
-    <link rel="manifest" href="icons/webmanifest.json" />
+    
     <link rel="mask-icon" href="icons/favicon.svg" color="#5fb358" />
     <meta name="msapplication-TileColor" content="#00aba9" />
     <meta name="theme-color" content="#ffffff" />
-
     <link rel="stylesheet" href="CSS/style.css" />
+    <!-- マニフェストファイル読み込みとサービスワーカーの登録 -->
+    <link rel="manifest" href="manifest.json" />
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('service-worker.js')
+            .then(function() {
+              console.log("サービスワーカーを登録しました");
+            })
+            .catch(function(error) {
+              console.error("サービスワーカーの登録に失敗しました:", error);
+            });
+        });
+      }
+    </script>
+
+    <title>いえもんくんのWebサイト</title>
   </head>
   <body class="body-left">
     <!-- header section starts -->
