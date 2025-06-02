@@ -151,6 +151,10 @@ section{
     display: flex;
 }
 
+.header-right .settings {
+    justify-content: flex-end;
+}
+
 
 
 #theme-toggler{
