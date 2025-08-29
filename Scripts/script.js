@@ -69,9 +69,13 @@ function updateMain(content) {
 
 // ナビゲーションメニューのリンクにイベントリスナーを設定
 document.querySelectorAll(".navbar a").forEach((link) => {
-  link.addEventListener("click", (event) => {
-    event.preventDefault();
-    updateMain(`内容: ${event.target.textContent}`);
+  link.addEventListener("click", () => {
+    // メニューを閉じるだけ（アンカー遷移はそのまま）
+    if (header && menu) {
+      header.classList.remove("active");
+      menu.classList.remove("open");
+      menu.textContent = "三";
+    }
   });
 });
 
