@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
@@ -8,7 +8,10 @@
     <meta property="og:title" content="いえもんくんのホームページ" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://iemon-kun.github.io/" />
-    <meta property="og:image" content="https://iemon-kun.github.io/image/OGP1200x630.png" />
+    <meta
+      property="og:image"
+      content="https://iemon-kun.github.io/image/OGP1200x630.png"
+    />
     <!-- 推奨サイズ1200x630px -->
     <meta property="og:site_name" content="いえもんくんのホームページ" />
     <meta
@@ -25,7 +28,10 @@
       name="twitter:description"
       content="ここはいえもんくんのホームページです。作ったものや各種リンクをまとめています。"
     />
-    <meta name="twitter:image" content="https://iemon-kun.github.io/image/OGP1200x630.png" />
+    <meta
+      name="twitter:image"
+      content="https://iemon-kun.github.io/image/OGP1200x630.png"
+    />
     <!-- 1200x628px, 5MB以下 -->
 
     <link
@@ -45,7 +51,7 @@
       sizes="16x16"
       href="icons/favicon-16x16.png"
     />
-    
+
     <link rel="mask-icon" href="icons/favicon.svg" color="#5fb358" />
     <meta name="msapplication-TileColor" content="#00aba9" />
     <meta name="theme-color" content="#ffffff" />
@@ -53,13 +59,14 @@
     <!-- マニフェストファイル読み込みとサービスワーカーの登録 -->
     <link rel="manifest" href="manifest.json" />
     <script>
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', function() {
-          navigator.serviceWorker.register('service-worker.js')
-            .then(function() {
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+          navigator.serviceWorker
+            .register("service-worker.js")
+            .then(function () {
               console.log("サービスワーカーを登録しました");
             })
-            .catch(function(error) {
+            .catch(function (error) {
               console.error("サービスワーカーの登録に失敗しました:", error);
             });
         });
@@ -135,14 +142,12 @@
       <!-- about section -->
       <section class="about" id="about">
         <h3>自<span>己</span>紹介</h3>
-        <p>3次元世界に現れた2Dエコ(サーバー負荷)な1頭身。</p>
-        <p>次空の狭間である2つをいい距離にできないか模索している。</p>
+        <p>おもに日本国産メタバースプラットフォームclusterのユーザーとして</p>
+        <p>クラフトアイテムやワールドなどを作ってます。</p>
         <h4><span>学</span>んでいること</h4>
-        <p>
-          Blender, Unity, Python, Ruby, JavaScript, HTML, CSS, 画像作成, など
-        </p>
+        <p>Blender, Unity, 画像作成, JavaScript, HTML, CSS, など</p>
         <h4>好きなこと</h4>
-        <p>音楽, 情報, ハウツー, 植物</p>
+        <p>音楽, 情報, ハウツー, 植物, Python, Ruby</p>
       </section>
 
       <!-- works section -->
@@ -262,7 +267,6 @@
             >CoeFont</a
           >
           <a href="https://note.com/iemon_kun/" target="_blank">note</a>
-          <a href="https://iemon-kun.fanbox.cc/" target="_blank">FANBOX</a>
           <a href="https://hub.vroid.com/users/61057414" target="_blank"
             >VRoid Hub</a
           >
